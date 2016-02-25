@@ -2,7 +2,6 @@
 
 AC_PREREQ(2.61)
 AC_INIT(utrac, 0.3.0, http://utrac.sourceforge.net/)
-AC_CONFIG_SRCDIR([src/utrac.c])
 AM_INIT_AUTOMAKE([1.9 foreign])
 
 # Checks for programs.
@@ -26,8 +25,13 @@ AC_FUNC_REALLOC
 AC_CHECK_FUNCS([floor nl_langinfo strchr strndup strstr strtoul])
 
 AC_CONFIG_FILES([
-Makefile
-src/Makefile]
+Makefile]
 )
+
+AM_PROG_LIBTOOL
+AC_PROG_CC
+AC_PROG_RANLIB
+
+LT_INIT
 AC_OUTPUT
 

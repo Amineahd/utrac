@@ -98,8 +98,6 @@ const char * UT_DEFAULT_ENCODING_UNIX = "ISO-8859-1";
 #else
 //! Language and system coeficients applied to charset rating, depending on language or system selected.
 extern const float UT_LANG_SYS_COEF [];
-//! Path 1 to file containing charset informations.
-extern const char * UT_CHARMAPS_FILENAME;
 //! Path 2 to file containing charset informations.
 extern const char * UT_CHARMAPS_FILENAME2;
 //! Default encoding on Unix systems.
